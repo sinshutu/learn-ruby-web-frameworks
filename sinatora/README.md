@@ -3,6 +3,7 @@
 ## setup && run
 ```
 $ bundle
+$ bundle exec mailcatcher
 $ bundle exec ruby ./src/app.rb
 ```
 

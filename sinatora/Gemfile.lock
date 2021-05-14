@@ -1,23 +1,42 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    mustermann (1.1.1)
-      ruby2_keywords (~> 0.0.1)
-    rack (2.2.3)
-    rack-protection (2.1.0)
+    daemons (1.4.0)
+    eventmachine (1.0.9.1)
+    mail (2.7.1)
+      mini_mime (>= 0.1.1)
+    mailcatcher (0.7.1)
+      eventmachine (= 1.0.9.1)
+      mail (~> 2.3)
+      rack (~> 1.5)
+      sinatra (~> 1.2)
+      skinny (~> 0.2.3)
+      sqlite3 (~> 1.3)
+      thin (~> 1.5.0)
+    mini_mime (1.1.0)
+    rack (1.6.13)
+    rack-protection (1.5.5)
       rack
-    ruby2_keywords (0.0.4)
-    sinatra (2.1.0)
-      mustermann (~> 1.0)
-      rack (~> 2.2)
-      rack-protection (= 2.1.0)
-      tilt (~> 2.0)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    skinny (0.2.4)
+      eventmachine (~> 1.0.0)
+      thin (>= 1.5, < 1.7)
+    sqlite3 (1.4.2)
+    thin (1.5.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     tilt (2.0.10)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  mail
+  mailcatcher (~> 0.7.1)
   sinatra
 
 BUNDLED WITH
